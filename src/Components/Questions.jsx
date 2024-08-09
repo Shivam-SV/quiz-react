@@ -8,7 +8,7 @@ export default function Questions({question, onQuestionAnswered, currentQuestion
                 <i className={styles.questionNumber}>{currentQuestion + 1} of {totalQuestions}</i>
             </div>
             <ul className={styles.optionList}>
-                {[question.correct_answer, ...question.incorrect_answers].map((answer, index) => (
+                {[question.correct_answer, ...question.incorrect_answers].map(a =>  ({a, sort: Math.random()})).sort((a, b) => a.sort - b.sort).map(a => a.a).map((answer, index) => (
                     <li key={index}>
                         <button 
                             onClick={() => onQuestionAnswered(answer, question.correct_answer === answer, question.correct_answer)}
