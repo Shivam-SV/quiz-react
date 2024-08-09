@@ -1,0 +1,6 @@
+.container {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2rem;
+    overflow-y: auto;
+}

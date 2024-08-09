@@ -1,0 +1,32 @@
+.optionList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+.optionButton{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    padding: 1rem 1.5rem;
+    border: 1px solid #77A1D3;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+.optionButton:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.questionNumber{
+    color: #bbb;
+}
